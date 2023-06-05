@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'directory_model.dart';
 
@@ -33,34 +33,37 @@ mixin _$DirectoryModel {
 abstract class $DirectoryModelCopyWith<$Res> {
   factory $DirectoryModelCopyWith(
           DirectoryModel value, $Res Function(DirectoryModel) then) =
-      _$DirectoryModelCopyWithImpl<$Res>;
+      _$DirectoryModelCopyWithImpl<$Res, DirectoryModel>;
+  @useResult
   $Res call({int id, String name});
 }
 
 /// @nodoc
-class _$DirectoryModelCopyWithImpl<$Res>
+class _$DirectoryModelCopyWithImpl<$Res, $Val extends DirectoryModel>
     implements $DirectoryModelCopyWith<$Res> {
   _$DirectoryModelCopyWithImpl(this._value, this._then);
 
-  final DirectoryModel _value;
   // ignore: unused_field
-  final $Res Function(DirectoryModel) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
+    Object? id = null,
+    Object? name = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
@@ -71,31 +74,30 @@ abstract class _$$_DirectoryModelCopyWith<$Res>
           _$_DirectoryModel value, $Res Function(_$_DirectoryModel) then) =
       __$$_DirectoryModelCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int id, String name});
 }
 
 /// @nodoc
 class __$$_DirectoryModelCopyWithImpl<$Res>
-    extends _$DirectoryModelCopyWithImpl<$Res>
+    extends _$DirectoryModelCopyWithImpl<$Res, _$_DirectoryModel>
     implements _$$_DirectoryModelCopyWith<$Res> {
   __$$_DirectoryModelCopyWithImpl(
       _$_DirectoryModel _value, $Res Function(_$_DirectoryModel) _then)
-      : super(_value, (v) => _then(v as _$_DirectoryModel));
+      : super(_value, _then);
 
-  @override
-  _$_DirectoryModel get _value => super._value as _$_DirectoryModel;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
+    Object? id = null,
+    Object? name = null,
   }) {
     return _then(_$_DirectoryModel(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
@@ -128,19 +130,17 @@ class _$_DirectoryModel implements _DirectoryModel {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_DirectoryModel &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name));
+  int get hashCode => Object.hash(runtimeType, id, name);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_DirectoryModelCopyWith<_$_DirectoryModel> get copyWith =>
       __$$_DirectoryModelCopyWithImpl<_$_DirectoryModel>(this, _$identity);
 

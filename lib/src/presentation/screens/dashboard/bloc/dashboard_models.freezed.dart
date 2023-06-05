@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'dashboard_models.dart';
 
@@ -30,14 +30,14 @@ mixin _$DashboardScreenEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getInfo,
-    TResult Function(int directoryId)? setDirectory,
-    TResult Function(String name)? addDirectory,
-    TResult Function(DirectoryModel directory)? renameDirectory,
-    TResult Function(int id)? delDirectory,
-    TResult Function(NoteModel note)? addNote,
-    TResult Function(NoteModel note)? changeNote,
-    TResult Function(int id)? delNote,
+    TResult? Function()? getInfo,
+    TResult? Function(int directoryId)? setDirectory,
+    TResult? Function(String name)? addDirectory,
+    TResult? Function(DirectoryModel directory)? renameDirectory,
+    TResult? Function(int id)? delDirectory,
+    TResult? Function(NoteModel note)? addNote,
+    TResult? Function(NoteModel note)? changeNote,
+    TResult? Function(int id)? delNote,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -67,14 +67,14 @@ mixin _$DashboardScreenEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(GetInfoEvent value)? getInfo,
-    TResult Function(SetDirectoryEvent value)? setDirectory,
-    TResult Function(AddDirectoryEvent value)? addDirectory,
-    TResult Function(RenameDirectoryEvent value)? renameDirectory,
-    TResult Function(DelDirectoryEvent value)? delDirectory,
-    TResult Function(AddNoteEvent value)? addNote,
-    TResult Function(ChangeNoteEvent value)? changeNote,
-    TResult Function(DelNoteEvent value)? delNote,
+    TResult? Function(GetInfoEvent value)? getInfo,
+    TResult? Function(SetDirectoryEvent value)? setDirectory,
+    TResult? Function(AddDirectoryEvent value)? addDirectory,
+    TResult? Function(RenameDirectoryEvent value)? renameDirectory,
+    TResult? Function(DelDirectoryEvent value)? delDirectory,
+    TResult? Function(AddNoteEvent value)? addNote,
+    TResult? Function(ChangeNoteEvent value)? changeNote,
+    TResult? Function(DelNoteEvent value)? delNote,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -96,17 +96,19 @@ mixin _$DashboardScreenEvent {
 abstract class $DashboardScreenEventCopyWith<$Res> {
   factory $DashboardScreenEventCopyWith(DashboardScreenEvent value,
           $Res Function(DashboardScreenEvent) then) =
-      _$DashboardScreenEventCopyWithImpl<$Res>;
+      _$DashboardScreenEventCopyWithImpl<$Res, DashboardScreenEvent>;
 }
 
 /// @nodoc
-class _$DashboardScreenEventCopyWithImpl<$Res>
+class _$DashboardScreenEventCopyWithImpl<$Res,
+        $Val extends DashboardScreenEvent>
     implements $DashboardScreenEventCopyWith<$Res> {
   _$DashboardScreenEventCopyWithImpl(this._value, this._then);
 
-  final DashboardScreenEvent _value;
   // ignore: unused_field
-  final $Res Function(DashboardScreenEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
@@ -118,14 +120,11 @@ abstract class _$$GetInfoEventCopyWith<$Res> {
 
 /// @nodoc
 class __$$GetInfoEventCopyWithImpl<$Res>
-    extends _$DashboardScreenEventCopyWithImpl<$Res>
+    extends _$DashboardScreenEventCopyWithImpl<$Res, _$GetInfoEvent>
     implements _$$GetInfoEventCopyWith<$Res> {
   __$$GetInfoEventCopyWithImpl(
       _$GetInfoEvent _value, $Res Function(_$GetInfoEvent) _then)
-      : super(_value, (v) => _then(v as _$GetInfoEvent));
-
-  @override
-  _$GetInfoEvent get _value => super._value as _$GetInfoEvent;
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -165,14 +164,14 @@ class _$GetInfoEvent implements GetInfoEvent {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getInfo,
-    TResult Function(int directoryId)? setDirectory,
-    TResult Function(String name)? addDirectory,
-    TResult Function(DirectoryModel directory)? renameDirectory,
-    TResult Function(int id)? delDirectory,
-    TResult Function(NoteModel note)? addNote,
-    TResult Function(NoteModel note)? changeNote,
-    TResult Function(int id)? delNote,
+    TResult? Function()? getInfo,
+    TResult? Function(int directoryId)? setDirectory,
+    TResult? Function(String name)? addDirectory,
+    TResult? Function(DirectoryModel directory)? renameDirectory,
+    TResult? Function(int id)? delDirectory,
+    TResult? Function(NoteModel note)? addNote,
+    TResult? Function(NoteModel note)? changeNote,
+    TResult? Function(int id)? delNote,
   }) {
     return getInfo?.call();
   }
@@ -214,14 +213,14 @@ class _$GetInfoEvent implements GetInfoEvent {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(GetInfoEvent value)? getInfo,
-    TResult Function(SetDirectoryEvent value)? setDirectory,
-    TResult Function(AddDirectoryEvent value)? addDirectory,
-    TResult Function(RenameDirectoryEvent value)? renameDirectory,
-    TResult Function(DelDirectoryEvent value)? delDirectory,
-    TResult Function(AddNoteEvent value)? addNote,
-    TResult Function(ChangeNoteEvent value)? changeNote,
-    TResult Function(DelNoteEvent value)? delNote,
+    TResult? Function(GetInfoEvent value)? getInfo,
+    TResult? Function(SetDirectoryEvent value)? setDirectory,
+    TResult? Function(AddDirectoryEvent value)? addDirectory,
+    TResult? Function(RenameDirectoryEvent value)? renameDirectory,
+    TResult? Function(DelDirectoryEvent value)? delDirectory,
+    TResult? Function(AddNoteEvent value)? addNote,
+    TResult? Function(ChangeNoteEvent value)? changeNote,
+    TResult? Function(DelNoteEvent value)? delNote,
   }) {
     return getInfo?.call(this);
   }
@@ -255,26 +254,25 @@ abstract class _$$SetDirectoryEventCopyWith<$Res> {
   factory _$$SetDirectoryEventCopyWith(
           _$SetDirectoryEvent value, $Res Function(_$SetDirectoryEvent) then) =
       __$$SetDirectoryEventCopyWithImpl<$Res>;
+  @useResult
   $Res call({int directoryId});
 }
 
 /// @nodoc
 class __$$SetDirectoryEventCopyWithImpl<$Res>
-    extends _$DashboardScreenEventCopyWithImpl<$Res>
+    extends _$DashboardScreenEventCopyWithImpl<$Res, _$SetDirectoryEvent>
     implements _$$SetDirectoryEventCopyWith<$Res> {
   __$$SetDirectoryEventCopyWithImpl(
       _$SetDirectoryEvent _value, $Res Function(_$SetDirectoryEvent) _then)
-      : super(_value, (v) => _then(v as _$SetDirectoryEvent));
+      : super(_value, _then);
 
-  @override
-  _$SetDirectoryEvent get _value => super._value as _$SetDirectoryEvent;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? directoryId = freezed,
+    Object? directoryId = null,
   }) {
     return _then(_$SetDirectoryEvent(
-      directoryId: directoryId == freezed
+      directoryId: null == directoryId
           ? _value.directoryId
           : directoryId // ignore: cast_nullable_to_non_nullable
               as int,
@@ -300,16 +298,16 @@ class _$SetDirectoryEvent implements SetDirectoryEvent {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$SetDirectoryEvent &&
-            const DeepCollectionEquality()
-                .equals(other.directoryId, directoryId));
+            (identical(other.directoryId, directoryId) ||
+                other.directoryId == directoryId));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(directoryId));
+  int get hashCode => Object.hash(runtimeType, directoryId);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$SetDirectoryEventCopyWith<_$SetDirectoryEvent> get copyWith =>
       __$$SetDirectoryEventCopyWithImpl<_$SetDirectoryEvent>(this, _$identity);
 
@@ -331,14 +329,14 @@ class _$SetDirectoryEvent implements SetDirectoryEvent {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getInfo,
-    TResult Function(int directoryId)? setDirectory,
-    TResult Function(String name)? addDirectory,
-    TResult Function(DirectoryModel directory)? renameDirectory,
-    TResult Function(int id)? delDirectory,
-    TResult Function(NoteModel note)? addNote,
-    TResult Function(NoteModel note)? changeNote,
-    TResult Function(int id)? delNote,
+    TResult? Function()? getInfo,
+    TResult? Function(int directoryId)? setDirectory,
+    TResult? Function(String name)? addDirectory,
+    TResult? Function(DirectoryModel directory)? renameDirectory,
+    TResult? Function(int id)? delDirectory,
+    TResult? Function(NoteModel note)? addNote,
+    TResult? Function(NoteModel note)? changeNote,
+    TResult? Function(int id)? delNote,
   }) {
     return setDirectory?.call(directoryId);
   }
@@ -380,14 +378,14 @@ class _$SetDirectoryEvent implements SetDirectoryEvent {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(GetInfoEvent value)? getInfo,
-    TResult Function(SetDirectoryEvent value)? setDirectory,
-    TResult Function(AddDirectoryEvent value)? addDirectory,
-    TResult Function(RenameDirectoryEvent value)? renameDirectory,
-    TResult Function(DelDirectoryEvent value)? delDirectory,
-    TResult Function(AddNoteEvent value)? addNote,
-    TResult Function(ChangeNoteEvent value)? changeNote,
-    TResult Function(DelNoteEvent value)? delNote,
+    TResult? Function(GetInfoEvent value)? getInfo,
+    TResult? Function(SetDirectoryEvent value)? setDirectory,
+    TResult? Function(AddDirectoryEvent value)? addDirectory,
+    TResult? Function(RenameDirectoryEvent value)? renameDirectory,
+    TResult? Function(DelDirectoryEvent value)? delDirectory,
+    TResult? Function(AddNoteEvent value)? addNote,
+    TResult? Function(ChangeNoteEvent value)? changeNote,
+    TResult? Function(DelNoteEvent value)? delNote,
   }) {
     return setDirectory?.call(this);
   }
@@ -427,26 +425,25 @@ abstract class _$$AddDirectoryEventCopyWith<$Res> {
   factory _$$AddDirectoryEventCopyWith(
           _$AddDirectoryEvent value, $Res Function(_$AddDirectoryEvent) then) =
       __$$AddDirectoryEventCopyWithImpl<$Res>;
+  @useResult
   $Res call({String name});
 }
 
 /// @nodoc
 class __$$AddDirectoryEventCopyWithImpl<$Res>
-    extends _$DashboardScreenEventCopyWithImpl<$Res>
+    extends _$DashboardScreenEventCopyWithImpl<$Res, _$AddDirectoryEvent>
     implements _$$AddDirectoryEventCopyWith<$Res> {
   __$$AddDirectoryEventCopyWithImpl(
       _$AddDirectoryEvent _value, $Res Function(_$AddDirectoryEvent) _then)
-      : super(_value, (v) => _then(v as _$AddDirectoryEvent));
+      : super(_value, _then);
 
-  @override
-  _$AddDirectoryEvent get _value => super._value as _$AddDirectoryEvent;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
+    Object? name = null,
   }) {
     return _then(_$AddDirectoryEvent(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
@@ -472,15 +469,15 @@ class _$AddDirectoryEvent implements AddDirectoryEvent {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AddDirectoryEvent &&
-            const DeepCollectionEquality().equals(other.name, name));
+            (identical(other.name, name) || other.name == name));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(name));
+  int get hashCode => Object.hash(runtimeType, name);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$AddDirectoryEventCopyWith<_$AddDirectoryEvent> get copyWith =>
       __$$AddDirectoryEventCopyWithImpl<_$AddDirectoryEvent>(this, _$identity);
 
@@ -502,14 +499,14 @@ class _$AddDirectoryEvent implements AddDirectoryEvent {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getInfo,
-    TResult Function(int directoryId)? setDirectory,
-    TResult Function(String name)? addDirectory,
-    TResult Function(DirectoryModel directory)? renameDirectory,
-    TResult Function(int id)? delDirectory,
-    TResult Function(NoteModel note)? addNote,
-    TResult Function(NoteModel note)? changeNote,
-    TResult Function(int id)? delNote,
+    TResult? Function()? getInfo,
+    TResult? Function(int directoryId)? setDirectory,
+    TResult? Function(String name)? addDirectory,
+    TResult? Function(DirectoryModel directory)? renameDirectory,
+    TResult? Function(int id)? delDirectory,
+    TResult? Function(NoteModel note)? addNote,
+    TResult? Function(NoteModel note)? changeNote,
+    TResult? Function(int id)? delNote,
   }) {
     return addDirectory?.call(name);
   }
@@ -551,14 +548,14 @@ class _$AddDirectoryEvent implements AddDirectoryEvent {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(GetInfoEvent value)? getInfo,
-    TResult Function(SetDirectoryEvent value)? setDirectory,
-    TResult Function(AddDirectoryEvent value)? addDirectory,
-    TResult Function(RenameDirectoryEvent value)? renameDirectory,
-    TResult Function(DelDirectoryEvent value)? delDirectory,
-    TResult Function(AddNoteEvent value)? addNote,
-    TResult Function(ChangeNoteEvent value)? changeNote,
-    TResult Function(DelNoteEvent value)? delNote,
+    TResult? Function(GetInfoEvent value)? getInfo,
+    TResult? Function(SetDirectoryEvent value)? setDirectory,
+    TResult? Function(AddDirectoryEvent value)? addDirectory,
+    TResult? Function(RenameDirectoryEvent value)? renameDirectory,
+    TResult? Function(DelDirectoryEvent value)? delDirectory,
+    TResult? Function(AddNoteEvent value)? addNote,
+    TResult? Function(ChangeNoteEvent value)? changeNote,
+    TResult? Function(DelNoteEvent value)? delNote,
   }) {
     return addDirectory?.call(this);
   }
@@ -597,6 +594,7 @@ abstract class _$$RenameDirectoryEventCopyWith<$Res> {
   factory _$$RenameDirectoryEventCopyWith(_$RenameDirectoryEvent value,
           $Res Function(_$RenameDirectoryEvent) then) =
       __$$RenameDirectoryEventCopyWithImpl<$Res>;
+  @useResult
   $Res call({DirectoryModel directory});
 
   $DirectoryModelCopyWith<$Res> get directory;
@@ -604,21 +602,19 @@ abstract class _$$RenameDirectoryEventCopyWith<$Res> {
 
 /// @nodoc
 class __$$RenameDirectoryEventCopyWithImpl<$Res>
-    extends _$DashboardScreenEventCopyWithImpl<$Res>
+    extends _$DashboardScreenEventCopyWithImpl<$Res, _$RenameDirectoryEvent>
     implements _$$RenameDirectoryEventCopyWith<$Res> {
   __$$RenameDirectoryEventCopyWithImpl(_$RenameDirectoryEvent _value,
       $Res Function(_$RenameDirectoryEvent) _then)
-      : super(_value, (v) => _then(v as _$RenameDirectoryEvent));
+      : super(_value, _then);
 
-  @override
-  _$RenameDirectoryEvent get _value => super._value as _$RenameDirectoryEvent;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? directory = freezed,
+    Object? directory = null,
   }) {
     return _then(_$RenameDirectoryEvent(
-      directory: directory == freezed
+      directory: null == directory
           ? _value.directory
           : directory // ignore: cast_nullable_to_non_nullable
               as DirectoryModel,
@@ -626,6 +622,7 @@ class __$$RenameDirectoryEventCopyWithImpl<$Res>
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $DirectoryModelCopyWith<$Res> get directory {
     return $DirectoryModelCopyWith<$Res>(_value.directory, (value) {
       return _then(_value.copyWith(directory: value));
@@ -651,15 +648,16 @@ class _$RenameDirectoryEvent implements RenameDirectoryEvent {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$RenameDirectoryEvent &&
-            const DeepCollectionEquality().equals(other.directory, directory));
+            (identical(other.directory, directory) ||
+                other.directory == directory));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(directory));
+  int get hashCode => Object.hash(runtimeType, directory);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$RenameDirectoryEventCopyWith<_$RenameDirectoryEvent> get copyWith =>
       __$$RenameDirectoryEventCopyWithImpl<_$RenameDirectoryEvent>(
           this, _$identity);
@@ -682,14 +680,14 @@ class _$RenameDirectoryEvent implements RenameDirectoryEvent {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getInfo,
-    TResult Function(int directoryId)? setDirectory,
-    TResult Function(String name)? addDirectory,
-    TResult Function(DirectoryModel directory)? renameDirectory,
-    TResult Function(int id)? delDirectory,
-    TResult Function(NoteModel note)? addNote,
-    TResult Function(NoteModel note)? changeNote,
-    TResult Function(int id)? delNote,
+    TResult? Function()? getInfo,
+    TResult? Function(int directoryId)? setDirectory,
+    TResult? Function(String name)? addDirectory,
+    TResult? Function(DirectoryModel directory)? renameDirectory,
+    TResult? Function(int id)? delDirectory,
+    TResult? Function(NoteModel note)? addNote,
+    TResult? Function(NoteModel note)? changeNote,
+    TResult? Function(int id)? delNote,
   }) {
     return renameDirectory?.call(directory);
   }
@@ -731,14 +729,14 @@ class _$RenameDirectoryEvent implements RenameDirectoryEvent {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(GetInfoEvent value)? getInfo,
-    TResult Function(SetDirectoryEvent value)? setDirectory,
-    TResult Function(AddDirectoryEvent value)? addDirectory,
-    TResult Function(RenameDirectoryEvent value)? renameDirectory,
-    TResult Function(DelDirectoryEvent value)? delDirectory,
-    TResult Function(AddNoteEvent value)? addNote,
-    TResult Function(ChangeNoteEvent value)? changeNote,
-    TResult Function(DelNoteEvent value)? delNote,
+    TResult? Function(GetInfoEvent value)? getInfo,
+    TResult? Function(SetDirectoryEvent value)? setDirectory,
+    TResult? Function(AddDirectoryEvent value)? addDirectory,
+    TResult? Function(RenameDirectoryEvent value)? renameDirectory,
+    TResult? Function(DelDirectoryEvent value)? delDirectory,
+    TResult? Function(AddNoteEvent value)? addNote,
+    TResult? Function(ChangeNoteEvent value)? changeNote,
+    TResult? Function(DelNoteEvent value)? delNote,
   }) {
     return renameDirectory?.call(this);
   }
@@ -778,26 +776,25 @@ abstract class _$$DelDirectoryEventCopyWith<$Res> {
   factory _$$DelDirectoryEventCopyWith(
           _$DelDirectoryEvent value, $Res Function(_$DelDirectoryEvent) then) =
       __$$DelDirectoryEventCopyWithImpl<$Res>;
+  @useResult
   $Res call({int id});
 }
 
 /// @nodoc
 class __$$DelDirectoryEventCopyWithImpl<$Res>
-    extends _$DashboardScreenEventCopyWithImpl<$Res>
+    extends _$DashboardScreenEventCopyWithImpl<$Res, _$DelDirectoryEvent>
     implements _$$DelDirectoryEventCopyWith<$Res> {
   __$$DelDirectoryEventCopyWithImpl(
       _$DelDirectoryEvent _value, $Res Function(_$DelDirectoryEvent) _then)
-      : super(_value, (v) => _then(v as _$DelDirectoryEvent));
+      : super(_value, _then);
 
-  @override
-  _$DelDirectoryEvent get _value => super._value as _$DelDirectoryEvent;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
+    Object? id = null,
   }) {
     return _then(_$DelDirectoryEvent(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
@@ -823,15 +820,15 @@ class _$DelDirectoryEvent implements DelDirectoryEvent {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$DelDirectoryEvent &&
-            const DeepCollectionEquality().equals(other.id, id));
+            (identical(other.id, id) || other.id == id));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(id));
+  int get hashCode => Object.hash(runtimeType, id);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$DelDirectoryEventCopyWith<_$DelDirectoryEvent> get copyWith =>
       __$$DelDirectoryEventCopyWithImpl<_$DelDirectoryEvent>(this, _$identity);
 
@@ -853,14 +850,14 @@ class _$DelDirectoryEvent implements DelDirectoryEvent {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getInfo,
-    TResult Function(int directoryId)? setDirectory,
-    TResult Function(String name)? addDirectory,
-    TResult Function(DirectoryModel directory)? renameDirectory,
-    TResult Function(int id)? delDirectory,
-    TResult Function(NoteModel note)? addNote,
-    TResult Function(NoteModel note)? changeNote,
-    TResult Function(int id)? delNote,
+    TResult? Function()? getInfo,
+    TResult? Function(int directoryId)? setDirectory,
+    TResult? Function(String name)? addDirectory,
+    TResult? Function(DirectoryModel directory)? renameDirectory,
+    TResult? Function(int id)? delDirectory,
+    TResult? Function(NoteModel note)? addNote,
+    TResult? Function(NoteModel note)? changeNote,
+    TResult? Function(int id)? delNote,
   }) {
     return delDirectory?.call(id);
   }
@@ -902,14 +899,14 @@ class _$DelDirectoryEvent implements DelDirectoryEvent {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(GetInfoEvent value)? getInfo,
-    TResult Function(SetDirectoryEvent value)? setDirectory,
-    TResult Function(AddDirectoryEvent value)? addDirectory,
-    TResult Function(RenameDirectoryEvent value)? renameDirectory,
-    TResult Function(DelDirectoryEvent value)? delDirectory,
-    TResult Function(AddNoteEvent value)? addNote,
-    TResult Function(ChangeNoteEvent value)? changeNote,
-    TResult Function(DelNoteEvent value)? delNote,
+    TResult? Function(GetInfoEvent value)? getInfo,
+    TResult? Function(SetDirectoryEvent value)? setDirectory,
+    TResult? Function(AddDirectoryEvent value)? addDirectory,
+    TResult? Function(RenameDirectoryEvent value)? renameDirectory,
+    TResult? Function(DelDirectoryEvent value)? delDirectory,
+    TResult? Function(AddNoteEvent value)? addNote,
+    TResult? Function(ChangeNoteEvent value)? changeNote,
+    TResult? Function(DelNoteEvent value)? delNote,
   }) {
     return delDirectory?.call(this);
   }
@@ -948,6 +945,7 @@ abstract class _$$AddNoteEventCopyWith<$Res> {
   factory _$$AddNoteEventCopyWith(
           _$AddNoteEvent value, $Res Function(_$AddNoteEvent) then) =
       __$$AddNoteEventCopyWithImpl<$Res>;
+  @useResult
   $Res call({NoteModel note});
 
   $NoteModelCopyWith<$Res> get note;
@@ -955,21 +953,19 @@ abstract class _$$AddNoteEventCopyWith<$Res> {
 
 /// @nodoc
 class __$$AddNoteEventCopyWithImpl<$Res>
-    extends _$DashboardScreenEventCopyWithImpl<$Res>
+    extends _$DashboardScreenEventCopyWithImpl<$Res, _$AddNoteEvent>
     implements _$$AddNoteEventCopyWith<$Res> {
   __$$AddNoteEventCopyWithImpl(
       _$AddNoteEvent _value, $Res Function(_$AddNoteEvent) _then)
-      : super(_value, (v) => _then(v as _$AddNoteEvent));
+      : super(_value, _then);
 
-  @override
-  _$AddNoteEvent get _value => super._value as _$AddNoteEvent;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? note = freezed,
+    Object? note = null,
   }) {
     return _then(_$AddNoteEvent(
-      note: note == freezed
+      note: null == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as NoteModel,
@@ -977,6 +973,7 @@ class __$$AddNoteEventCopyWithImpl<$Res>
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NoteModelCopyWith<$Res> get note {
     return $NoteModelCopyWith<$Res>(_value.note, (value) {
       return _then(_value.copyWith(note: value));
@@ -1002,15 +999,15 @@ class _$AddNoteEvent implements AddNoteEvent {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AddNoteEvent &&
-            const DeepCollectionEquality().equals(other.note, note));
+            (identical(other.note, note) || other.note == note));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(note));
+  int get hashCode => Object.hash(runtimeType, note);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$AddNoteEventCopyWith<_$AddNoteEvent> get copyWith =>
       __$$AddNoteEventCopyWithImpl<_$AddNoteEvent>(this, _$identity);
 
@@ -1032,14 +1029,14 @@ class _$AddNoteEvent implements AddNoteEvent {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getInfo,
-    TResult Function(int directoryId)? setDirectory,
-    TResult Function(String name)? addDirectory,
-    TResult Function(DirectoryModel directory)? renameDirectory,
-    TResult Function(int id)? delDirectory,
-    TResult Function(NoteModel note)? addNote,
-    TResult Function(NoteModel note)? changeNote,
-    TResult Function(int id)? delNote,
+    TResult? Function()? getInfo,
+    TResult? Function(int directoryId)? setDirectory,
+    TResult? Function(String name)? addDirectory,
+    TResult? Function(DirectoryModel directory)? renameDirectory,
+    TResult? Function(int id)? delDirectory,
+    TResult? Function(NoteModel note)? addNote,
+    TResult? Function(NoteModel note)? changeNote,
+    TResult? Function(int id)? delNote,
   }) {
     return addNote?.call(note);
   }
@@ -1081,14 +1078,14 @@ class _$AddNoteEvent implements AddNoteEvent {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(GetInfoEvent value)? getInfo,
-    TResult Function(SetDirectoryEvent value)? setDirectory,
-    TResult Function(AddDirectoryEvent value)? addDirectory,
-    TResult Function(RenameDirectoryEvent value)? renameDirectory,
-    TResult Function(DelDirectoryEvent value)? delDirectory,
-    TResult Function(AddNoteEvent value)? addNote,
-    TResult Function(ChangeNoteEvent value)? changeNote,
-    TResult Function(DelNoteEvent value)? delNote,
+    TResult? Function(GetInfoEvent value)? getInfo,
+    TResult? Function(SetDirectoryEvent value)? setDirectory,
+    TResult? Function(AddDirectoryEvent value)? addDirectory,
+    TResult? Function(RenameDirectoryEvent value)? renameDirectory,
+    TResult? Function(DelDirectoryEvent value)? delDirectory,
+    TResult? Function(AddNoteEvent value)? addNote,
+    TResult? Function(ChangeNoteEvent value)? changeNote,
+    TResult? Function(DelNoteEvent value)? delNote,
   }) {
     return addNote?.call(this);
   }
@@ -1127,6 +1124,7 @@ abstract class _$$ChangeNoteEventCopyWith<$Res> {
   factory _$$ChangeNoteEventCopyWith(
           _$ChangeNoteEvent value, $Res Function(_$ChangeNoteEvent) then) =
       __$$ChangeNoteEventCopyWithImpl<$Res>;
+  @useResult
   $Res call({NoteModel note});
 
   $NoteModelCopyWith<$Res> get note;
@@ -1134,21 +1132,19 @@ abstract class _$$ChangeNoteEventCopyWith<$Res> {
 
 /// @nodoc
 class __$$ChangeNoteEventCopyWithImpl<$Res>
-    extends _$DashboardScreenEventCopyWithImpl<$Res>
+    extends _$DashboardScreenEventCopyWithImpl<$Res, _$ChangeNoteEvent>
     implements _$$ChangeNoteEventCopyWith<$Res> {
   __$$ChangeNoteEventCopyWithImpl(
       _$ChangeNoteEvent _value, $Res Function(_$ChangeNoteEvent) _then)
-      : super(_value, (v) => _then(v as _$ChangeNoteEvent));
+      : super(_value, _then);
 
-  @override
-  _$ChangeNoteEvent get _value => super._value as _$ChangeNoteEvent;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? note = freezed,
+    Object? note = null,
   }) {
     return _then(_$ChangeNoteEvent(
-      note: note == freezed
+      note: null == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as NoteModel,
@@ -1156,6 +1152,7 @@ class __$$ChangeNoteEventCopyWithImpl<$Res>
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NoteModelCopyWith<$Res> get note {
     return $NoteModelCopyWith<$Res>(_value.note, (value) {
       return _then(_value.copyWith(note: value));
@@ -1181,15 +1178,15 @@ class _$ChangeNoteEvent implements ChangeNoteEvent {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$ChangeNoteEvent &&
-            const DeepCollectionEquality().equals(other.note, note));
+            (identical(other.note, note) || other.note == note));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(note));
+  int get hashCode => Object.hash(runtimeType, note);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$ChangeNoteEventCopyWith<_$ChangeNoteEvent> get copyWith =>
       __$$ChangeNoteEventCopyWithImpl<_$ChangeNoteEvent>(this, _$identity);
 
@@ -1211,14 +1208,14 @@ class _$ChangeNoteEvent implements ChangeNoteEvent {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getInfo,
-    TResult Function(int directoryId)? setDirectory,
-    TResult Function(String name)? addDirectory,
-    TResult Function(DirectoryModel directory)? renameDirectory,
-    TResult Function(int id)? delDirectory,
-    TResult Function(NoteModel note)? addNote,
-    TResult Function(NoteModel note)? changeNote,
-    TResult Function(int id)? delNote,
+    TResult? Function()? getInfo,
+    TResult? Function(int directoryId)? setDirectory,
+    TResult? Function(String name)? addDirectory,
+    TResult? Function(DirectoryModel directory)? renameDirectory,
+    TResult? Function(int id)? delDirectory,
+    TResult? Function(NoteModel note)? addNote,
+    TResult? Function(NoteModel note)? changeNote,
+    TResult? Function(int id)? delNote,
   }) {
     return changeNote?.call(note);
   }
@@ -1260,14 +1257,14 @@ class _$ChangeNoteEvent implements ChangeNoteEvent {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(GetInfoEvent value)? getInfo,
-    TResult Function(SetDirectoryEvent value)? setDirectory,
-    TResult Function(AddDirectoryEvent value)? addDirectory,
-    TResult Function(RenameDirectoryEvent value)? renameDirectory,
-    TResult Function(DelDirectoryEvent value)? delDirectory,
-    TResult Function(AddNoteEvent value)? addNote,
-    TResult Function(ChangeNoteEvent value)? changeNote,
-    TResult Function(DelNoteEvent value)? delNote,
+    TResult? Function(GetInfoEvent value)? getInfo,
+    TResult? Function(SetDirectoryEvent value)? setDirectory,
+    TResult? Function(AddDirectoryEvent value)? addDirectory,
+    TResult? Function(RenameDirectoryEvent value)? renameDirectory,
+    TResult? Function(DelDirectoryEvent value)? delDirectory,
+    TResult? Function(AddNoteEvent value)? addNote,
+    TResult? Function(ChangeNoteEvent value)? changeNote,
+    TResult? Function(DelNoteEvent value)? delNote,
   }) {
     return changeNote?.call(this);
   }
@@ -1306,26 +1303,25 @@ abstract class _$$DelNoteEventCopyWith<$Res> {
   factory _$$DelNoteEventCopyWith(
           _$DelNoteEvent value, $Res Function(_$DelNoteEvent) then) =
       __$$DelNoteEventCopyWithImpl<$Res>;
+  @useResult
   $Res call({int id});
 }
 
 /// @nodoc
 class __$$DelNoteEventCopyWithImpl<$Res>
-    extends _$DashboardScreenEventCopyWithImpl<$Res>
+    extends _$DashboardScreenEventCopyWithImpl<$Res, _$DelNoteEvent>
     implements _$$DelNoteEventCopyWith<$Res> {
   __$$DelNoteEventCopyWithImpl(
       _$DelNoteEvent _value, $Res Function(_$DelNoteEvent) _then)
-      : super(_value, (v) => _then(v as _$DelNoteEvent));
+      : super(_value, _then);
 
-  @override
-  _$DelNoteEvent get _value => super._value as _$DelNoteEvent;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
+    Object? id = null,
   }) {
     return _then(_$DelNoteEvent(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1351,15 +1347,15 @@ class _$DelNoteEvent implements DelNoteEvent {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$DelNoteEvent &&
-            const DeepCollectionEquality().equals(other.id, id));
+            (identical(other.id, id) || other.id == id));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(id));
+  int get hashCode => Object.hash(runtimeType, id);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$DelNoteEventCopyWith<_$DelNoteEvent> get copyWith =>
       __$$DelNoteEventCopyWithImpl<_$DelNoteEvent>(this, _$identity);
 
@@ -1381,14 +1377,14 @@ class _$DelNoteEvent implements DelNoteEvent {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getInfo,
-    TResult Function(int directoryId)? setDirectory,
-    TResult Function(String name)? addDirectory,
-    TResult Function(DirectoryModel directory)? renameDirectory,
-    TResult Function(int id)? delDirectory,
-    TResult Function(NoteModel note)? addNote,
-    TResult Function(NoteModel note)? changeNote,
-    TResult Function(int id)? delNote,
+    TResult? Function()? getInfo,
+    TResult? Function(int directoryId)? setDirectory,
+    TResult? Function(String name)? addDirectory,
+    TResult? Function(DirectoryModel directory)? renameDirectory,
+    TResult? Function(int id)? delDirectory,
+    TResult? Function(NoteModel note)? addNote,
+    TResult? Function(NoteModel note)? changeNote,
+    TResult? Function(int id)? delNote,
   }) {
     return delNote?.call(id);
   }
@@ -1430,14 +1426,14 @@ class _$DelNoteEvent implements DelNoteEvent {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(GetInfoEvent value)? getInfo,
-    TResult Function(SetDirectoryEvent value)? setDirectory,
-    TResult Function(AddDirectoryEvent value)? addDirectory,
-    TResult Function(RenameDirectoryEvent value)? renameDirectory,
-    TResult Function(DelDirectoryEvent value)? delDirectory,
-    TResult Function(AddNoteEvent value)? addNote,
-    TResult Function(ChangeNoteEvent value)? changeNote,
-    TResult Function(DelNoteEvent value)? delNote,
+    TResult? Function(GetInfoEvent value)? getInfo,
+    TResult? Function(SetDirectoryEvent value)? setDirectory,
+    TResult? Function(AddDirectoryEvent value)? addDirectory,
+    TResult? Function(RenameDirectoryEvent value)? renameDirectory,
+    TResult? Function(DelDirectoryEvent value)? delDirectory,
+    TResult? Function(AddNoteEvent value)? addNote,
+    TResult? Function(ChangeNoteEvent value)? changeNote,
+    TResult? Function(DelNoteEvent value)? delNote,
   }) {
     return delNote?.call(this);
   }
@@ -1485,7 +1481,7 @@ mixin _$DashboardScreenState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int directoryIndex, List<DirectoryModel> directories,
+    TResult? Function(int directoryIndex, List<DirectoryModel> directories,
             List<NoteModel> notes)?
         data,
   }) =>
@@ -1505,7 +1501,7 @@ mixin _$DashboardScreenState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(DashboardScreenStateData value)? data,
+    TResult? Function(DashboardScreenStateData value)? data,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -1524,7 +1520,8 @@ mixin _$DashboardScreenState {
 abstract class $DashboardScreenStateCopyWith<$Res> {
   factory $DashboardScreenStateCopyWith(DashboardScreenState value,
           $Res Function(DashboardScreenState) then) =
-      _$DashboardScreenStateCopyWithImpl<$Res>;
+      _$DashboardScreenStateCopyWithImpl<$Res, DashboardScreenState>;
+  @useResult
   $Res call(
       {int directoryIndex,
       List<DirectoryModel> directories,
@@ -1532,34 +1529,37 @@ abstract class $DashboardScreenStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$DashboardScreenStateCopyWithImpl<$Res>
+class _$DashboardScreenStateCopyWithImpl<$Res,
+        $Val extends DashboardScreenState>
     implements $DashboardScreenStateCopyWith<$Res> {
   _$DashboardScreenStateCopyWithImpl(this._value, this._then);
 
-  final DashboardScreenState _value;
   // ignore: unused_field
-  final $Res Function(DashboardScreenState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? directoryIndex = freezed,
-    Object? directories = freezed,
-    Object? notes = freezed,
+    Object? directoryIndex = null,
+    Object? directories = null,
+    Object? notes = null,
   }) {
     return _then(_value.copyWith(
-      directoryIndex: directoryIndex == freezed
+      directoryIndex: null == directoryIndex
           ? _value.directoryIndex
           : directoryIndex // ignore: cast_nullable_to_non_nullable
               as int,
-      directories: directories == freezed
+      directories: null == directories
           ? _value.directories
           : directories // ignore: cast_nullable_to_non_nullable
               as List<DirectoryModel>,
-      notes: notes == freezed
+      notes: null == notes
           ? _value.notes
           : notes // ignore: cast_nullable_to_non_nullable
               as List<NoteModel>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -1570,6 +1570,7 @@ abstract class _$$DashboardScreenStateDataCopyWith<$Res>
           $Res Function(_$DashboardScreenStateData) then) =
       __$$DashboardScreenStateDataCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int directoryIndex,
       List<DirectoryModel> directories,
@@ -1578,32 +1579,29 @@ abstract class _$$DashboardScreenStateDataCopyWith<$Res>
 
 /// @nodoc
 class __$$DashboardScreenStateDataCopyWithImpl<$Res>
-    extends _$DashboardScreenStateCopyWithImpl<$Res>
+    extends _$DashboardScreenStateCopyWithImpl<$Res, _$DashboardScreenStateData>
     implements _$$DashboardScreenStateDataCopyWith<$Res> {
   __$$DashboardScreenStateDataCopyWithImpl(_$DashboardScreenStateData _value,
       $Res Function(_$DashboardScreenStateData) _then)
-      : super(_value, (v) => _then(v as _$DashboardScreenStateData));
+      : super(_value, _then);
 
-  @override
-  _$DashboardScreenStateData get _value =>
-      super._value as _$DashboardScreenStateData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? directoryIndex = freezed,
-    Object? directories = freezed,
-    Object? notes = freezed,
+    Object? directoryIndex = null,
+    Object? directories = null,
+    Object? notes = null,
   }) {
     return _then(_$DashboardScreenStateData(
-      directoryIndex: directoryIndex == freezed
+      directoryIndex: null == directoryIndex
           ? _value.directoryIndex
           : directoryIndex // ignore: cast_nullable_to_non_nullable
               as int,
-      directories: directories == freezed
+      directories: null == directories
           ? _value._directories
           : directories // ignore: cast_nullable_to_non_nullable
               as List<DirectoryModel>,
-      notes: notes == freezed
+      notes: null == notes
           ? _value._notes
           : notes // ignore: cast_nullable_to_non_nullable
               as List<NoteModel>,
@@ -1629,6 +1627,7 @@ class _$DashboardScreenStateData extends DashboardScreenStateData {
   @override
   @JsonKey()
   List<DirectoryModel> get directories {
+    if (_directories is EqualUnmodifiableListView) return _directories;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_directories);
   }
@@ -1637,6 +1636,7 @@ class _$DashboardScreenStateData extends DashboardScreenStateData {
   @override
   @JsonKey()
   List<NoteModel> get notes {
+    if (_notes is EqualUnmodifiableListView) return _notes;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_notes);
   }
@@ -1651,8 +1651,8 @@ class _$DashboardScreenStateData extends DashboardScreenStateData {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$DashboardScreenStateData &&
-            const DeepCollectionEquality()
-                .equals(other.directoryIndex, directoryIndex) &&
+            (identical(other.directoryIndex, directoryIndex) ||
+                other.directoryIndex == directoryIndex) &&
             const DeepCollectionEquality()
                 .equals(other._directories, _directories) &&
             const DeepCollectionEquality().equals(other._notes, _notes));
@@ -1661,12 +1661,13 @@ class _$DashboardScreenStateData extends DashboardScreenStateData {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(directoryIndex),
+      directoryIndex,
       const DeepCollectionEquality().hash(_directories),
       const DeepCollectionEquality().hash(_notes));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$DashboardScreenStateDataCopyWith<_$DashboardScreenStateData>
       get copyWith =>
           __$$DashboardScreenStateDataCopyWithImpl<_$DashboardScreenStateData>(
@@ -1685,7 +1686,7 @@ class _$DashboardScreenStateData extends DashboardScreenStateData {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int directoryIndex, List<DirectoryModel> directories,
+    TResult? Function(int directoryIndex, List<DirectoryModel> directories,
             List<NoteModel> notes)?
         data,
   }) {
@@ -1717,7 +1718,7 @@ class _$DashboardScreenStateData extends DashboardScreenStateData {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(DashboardScreenStateData value)? data,
+    TResult? Function(DashboardScreenStateData value)? data,
   }) {
     return data?.call(this);
   }

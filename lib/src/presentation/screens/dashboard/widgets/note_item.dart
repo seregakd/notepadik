@@ -31,13 +31,13 @@ class NoteItem extends StatelessWidget {
             ),
           ],
         ),
-        child: Container(
-          padding: const EdgeInsets.all(8),
-          child: InkWell(
-            onTap: onTap,
-            onLongPress: onTapDel,
+        child: InkWell(
+          onTap: onTap,
+          onLongPress: onTapDel,
+          child: Padding(
+            padding: const EdgeInsets.all(8),
             child: Text(
-              '${note.id} ${note.title}',
+              note.title,
               style: const TextStyle(fontSize: 18),
             ),
           ),

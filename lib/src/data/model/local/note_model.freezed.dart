@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'note_model.dart';
 
@@ -34,43 +34,47 @@ mixin _$NoteModel {
 /// @nodoc
 abstract class $NoteModelCopyWith<$Res> {
   factory $NoteModelCopyWith(NoteModel value, $Res Function(NoteModel) then) =
-      _$NoteModelCopyWithImpl<$Res>;
+      _$NoteModelCopyWithImpl<$Res, NoteModel>;
+  @useResult
   $Res call({int? id, int directoryId, String title, String note});
 }
 
 /// @nodoc
-class _$NoteModelCopyWithImpl<$Res> implements $NoteModelCopyWith<$Res> {
+class _$NoteModelCopyWithImpl<$Res, $Val extends NoteModel>
+    implements $NoteModelCopyWith<$Res> {
   _$NoteModelCopyWithImpl(this._value, this._then);
 
-  final NoteModel _value;
   // ignore: unused_field
-  final $Res Function(NoteModel) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? id = freezed,
-    Object? directoryId = freezed,
-    Object? title = freezed,
-    Object? note = freezed,
+    Object? directoryId = null,
+    Object? title = null,
+    Object? note = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int?,
-      directoryId: directoryId == freezed
+      directoryId: null == directoryId
           ? _value.directoryId
           : directoryId // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      note: note == freezed
+      note: null == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
@@ -80,40 +84,40 @@ abstract class _$$_NoteModelCopyWith<$Res> implements $NoteModelCopyWith<$Res> {
           _$_NoteModel value, $Res Function(_$_NoteModel) then) =
       __$$_NoteModelCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int? id, int directoryId, String title, String note});
 }
 
 /// @nodoc
-class __$$_NoteModelCopyWithImpl<$Res> extends _$NoteModelCopyWithImpl<$Res>
+class __$$_NoteModelCopyWithImpl<$Res>
+    extends _$NoteModelCopyWithImpl<$Res, _$_NoteModel>
     implements _$$_NoteModelCopyWith<$Res> {
   __$$_NoteModelCopyWithImpl(
       _$_NoteModel _value, $Res Function(_$_NoteModel) _then)
-      : super(_value, (v) => _then(v as _$_NoteModel));
+      : super(_value, _then);
 
-  @override
-  _$_NoteModel get _value => super._value as _$_NoteModel;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? id = freezed,
-    Object? directoryId = freezed,
-    Object? title = freezed,
-    Object? note = freezed,
+    Object? directoryId = null,
+    Object? title = null,
+    Object? note = null,
   }) {
     return _then(_$_NoteModel(
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int?,
-      directoryId: directoryId == freezed
+      directoryId: null == directoryId
           ? _value.directoryId
           : directoryId // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      note: note == freezed
+      note: null == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as String,
@@ -152,24 +156,20 @@ class _$_NoteModel implements _NoteModel {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_NoteModel &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality()
-                .equals(other.directoryId, directoryId) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.note, note));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.directoryId, directoryId) ||
+                other.directoryId == directoryId) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.note, note) || other.note == note));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(directoryId),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(note));
+  int get hashCode => Object.hash(runtimeType, id, directoryId, title, note);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_NoteModelCopyWith<_$_NoteModel> get copyWith =>
       __$$_NoteModelCopyWithImpl<_$_NoteModel>(this, _$identity);
 

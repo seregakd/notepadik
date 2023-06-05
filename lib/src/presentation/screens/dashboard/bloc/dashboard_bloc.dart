@@ -1,11 +1,10 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
-import 'package:notepadik/src/data/model/local/directory_model.dart';
-import 'package:notepadik/src/data/repository/notes_repository.dart';
+import 'package:notepadik/src/data/repository/notes_drift_repository.dart';
 import 'dashboard_models.dart';
 
 class DashboardBloc extends Bloc<DashboardScreenEvent, DashboardScreenState> {
-  final _notesRepository = GetIt.instance<NotesRepository>();
+  final _notesRepository = GetIt.instance<NotesDriftRepository>();
 
   DashboardBloc() : super(DashboardScreenState.data()) {
     on<GetInfoEvent>(

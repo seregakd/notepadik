@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'package:notepadik/src/presentation/screens/dashboard/bloc/dashboard_bloc.dart';
+import 'package:notepadik/src/presentation/screens/dashboard/bloc/dashboard_models.dart';
 import 'package:notepadik/src/data/model/local/directory_model.dart';
 import 'package:notepadik/src/presentation/screens/change_note/change_note_screen.dart';
 import 'package:notepadik/src/util/dialogs.dart';
+import 'package:notepadik/src/presentation/screens/dashboard/widgets/note_item.dart';
 
-import 'bloc/dashboard_bloc.dart';
-import 'bloc/dashboard_models.dart';
-import 'widgets/note_item.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({Key? key}) : super(key: key);

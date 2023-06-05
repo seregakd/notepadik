@@ -20,6 +20,18 @@ class ChangeNoteScreen extends StatefulWidget {
 }
 
 class _ChangeNoteScreenState extends State<ChangeNoteScreen> {
+  final TextEditingController _titleController = TextEditingController();
+  final TextEditingController _noteController = TextEditingController();
+
+  @override
+  void initState() {
+    if (widget.note != null) {
+      _titleController.text = widget.note?.title ?? '';
+      _noteController.text = widget.note?.note ?? '';
+    }
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,31 +39,63 @@ class _ChangeNoteScreenState extends State<ChangeNoteScreen> {
       body: SizedBox(
         height: double.infinity,
         width: double.infinity,
-        child: Container(
-
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+          child: Column(
+            children: [
+              TextField(
+                controller: _titleController,
+                decoration: const InputDecoration(
+                  hintText: 'Title',
+                ),
+                textInputAction: TextInputAction.next,
+              ),
+              const SizedBox(height: 16),
+              TextField(
+                controller: _noteController,
+                decoration: const InputDecoration(
+                  hintText: 'Note',
+                ),
+                textInputAction: TextInputAction.done,
+                minLines: 10,
+                maxLines: 20,
+              ),
+              const SizedBox(height: 16),
+              TextButton(
+                onPressed: () {
+                  if (_titleController.text.trim().isNotEmpty) {
+                    if (widget.note == null && widget.directoryId != null) {
+                      var note = NoteModel(
+                        directoryId: widget.directoryId ?? 1,
+                        title: _titleController.text,
+                        note: _noteController.text,
+                      );
+                      context.read<DashboardBloc>().add(AddNoteEvent(note: note));
+                    } else {
+                      var note = NoteModel(
+                        id: widget.note?.id ?? 1,
+                        directoryId: widget.note?.directoryId ?? 1,
+                        title: _titleController.text,
+                        note: _noteController.text,
+                      );
+                      context.read<DashboardBloc>().add(ChangeNoteEvent(note: note));
+                    }
+                    Navigator.pop(context);
+                  }
+                },
+                child: Container(
+                  width: double.infinity,
+                  alignment: Alignment.center,
+                  child: const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    child: Text('Save'),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 16),
+            ],
+          ),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.add),
-        onPressed: () {
-          if (widget.note == null && widget.directoryId != null) {
-            var note = NoteModel(
-              directoryId: widget.directoryId ?? 1,
-              title: 'note 1',
-              note: 'text',
-            );
-            context.read<DashboardBloc>().add(AddNoteEvent(note: note));
-          } else {
-            var note = NoteModel(
-              id: widget.note!.id ?? 1,
-              directoryId: widget.note!.directoryId,
-              title: 'change note 1',
-              note: 'new text',
-            );
-            context.read<DashboardBloc>().add(ChangeNoteEvent(note: note));
-          }
-          Navigator.pop(context);
-        },
       ),
     );
   }
